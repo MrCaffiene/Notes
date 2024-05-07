@@ -21,8 +21,8 @@ github
 terminal 
 
 configuring git 
-git config --global user.name "Ankit Dhotre"
-git config --local user.name "Ankit Dhotre"
+git config --global user.name "MrCaffiene"
+git config --local user.name "MrCaffiene"
 
 git config --global user.email "ankitdhotre21@gmail.com"
 git config --local user.email "ankitdhotre21@gmail.com"
