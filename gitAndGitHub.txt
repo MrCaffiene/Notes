@@ -27,6 +27,8 @@ git config --local user.name "MrCaffiene"
 git config --global user.email "ankitdhotre21@gmail.com"
 git config --local user.email "ankitdhotre21@gmail.com"
 
+to check users
+git config --list
 
 git commands
 
