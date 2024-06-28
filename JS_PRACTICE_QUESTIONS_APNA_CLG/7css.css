@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    color: red;
+}
+.content-pink-bg{
+    background-color: pink;
+}

@@ -1,0 +1,141 @@
+LECTURE 1
+
+- JS has 8 Data types   // 7 are premitive except object(arrays, functions)
+1- number
+2- string
+3- bigint   //let x = BigInt("123");
+4- boolean
+5- undefined
+6- null      //absence of an object is null
+7- object 
+8- symbol     //let x = Symbol("123");
+
+QUESTION -  create a const obj called product to save name, rating, offer, price of the product like on amazone page.
+QUESTION -  crate a const obj to store information shown on an instagram page.
+
+LECTURE 2 
+
+QUESTION - get a user input using prompt "enter a number", check if the number is multiple of 5 or not.
+QUESTION - write a code which can give grades to students, 
+80-100 = A, 
+70-89 = B,
+60-69 = C,
+50-59 = D,
+0-49 = F.
+
+LECTURE 3 - Loops and strings 
+
+1 - for Loop 
+2 - while Loop
+3 - do while Loop
+4 - for-of Loop    for(let val in strvar){}
+5 - for-in loop   for(let key in objvar){}
+
+template literals = `${variable_name}`
+
+QUESTION - print all even numbers from 0 to 100.
+QUESTION - Create a game where you start with any random number. ask the user to keep guessing the number until the user enters the correct value.
+QUESTION - prompt the user to enter their full name. Generate a username for them based on the input. start the username with @, followed by their fullname and ending with the fullname length. eg : user name = "ankitdhotre",username = "@ankitdhotre11" 
+
+LECTURE 4 - arrays and array methods.
+
+in js strings are immutable but arrays are mutable.
+
+QUESTION - for a given array with marks of students -> [85,97,44,37,76,60] find the average marks of the entire class.
+QUESTION - for a given array with prices of five items -> [250, 645, 300, 900, 50] all items have an offer of 10% off on them. change the array to store final price after applying the offer.
+QUESTION - create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+a - remove the first company from the array 
+b - remove Uber and Add Ola in it's place 
+c - Add Amazone at the end
+
+LECTURE 5 - FUNCTIONS AND methods
+
+1 - call back functions     //functions which are passed as parameters to higher order functions
+2 - higher order functions   //functions using other functions as parameters or returning a function
+3 - arr.map();
+4 - arr.filter();
+5 - functions vs methods  //methods are functions which are binded to a particular data type
+6 - arr.reduce();
+
+QUESTION - create a function using the "function" keyword that takes a string as an argument and returns the number of vowels in the string.
+QUESTION - we are given array of marks of students.  filter out the students who scored 90+.
+a - take a number n as input from user. create an array of number from 1 to n.
+b - use the reduce method to calculate sum of all numbers in the array.
+c - use the reduce method to calculate product of all numbers in the array.
+
+LECTURE 6 - DOM PART_1
+
+1 - DOM
+2 - console.log() and console.dir()           // for printing and //print properties and methods of the given object respectively
+3 - important properties for dom manipulation {tagName, innerText, innerHTML, textContent}
+4 - text, comment, element nodes
+5 - firstChild, lastChild, children[i] 
+
+LECTURE 7 - DOM PART_2
+
+1 - getAttribute(attr)
+2 - setAttribute(attr,value )
+3 - node.style.attr = "value";  //for editing inline css using JS
+4 - document.createElement("element")  //for creating a new element through JS
+4 - node.append(element), node.prepend(element), node.before(element), node.after(element)  //for inseting elements 
+5 - node.remove() // for deleting node
+6 - appendChild(), removeChild()
+7 - element.classList //gives the list of classes that elements has 
+8 - element.classList.add("newclass");   
+9 - element.classList.remove("oldclass");
+
+QUESTION - create a new button element. give a text "click me", background color of red and text color of white, inside the button as the first element inside the body tag.
+QUESTION - create a <p> tag in html, give it a class and styling. Now crete a new class in css and try to append this class to the <p> element.did you notice how you overwrite the class name when you add a new . solve this problem using class list.
+
+LECTURE 8 - EVENTS 
+
+1 - EVENT = change in the state of an object.
+2 - click events = onclick, ondblclick, 
+3 - node.addEventListener("event","callBack()");
+4 - node.removeEventListener("event","callBack()");
+
+QUESTION - create a button to toggle between dark and light mode 
+
+LECTURE 10 - tic tak toe project
+
+LECTURE 11 - classes and objects 
+1 - prototypes   //js objects have special property called prototype  
+2 - newObj__prototype__ = oldObj  //creating new prototypes
+3 - objects  //entity having state and behaviour (properties and methods)
+4 - class  //templates for creating objects 
+5 - constructor()   //automatically invoked by new and initialises object
+6 - inheritance  // class Child extends Parent {} 
+7 - method overriding  // when child and parent has same method, the child method is used 
+8 - super  //it is used to access parents functions and methods in child class 
+9 - super()   super.parentfc()   //used to invoke parent constructor in child and dot for functions 
+10 - try catch error handling  //try{}catch(err){handled;}
+
+note : before using this keyword in child or exiting child constructor compulsory to use super()
+
+QUESTION - you are creating a website for your college. Create a class User  with 2 properties, name and email. it also has a method called viewData() that allows user to view website data.
+QUESTION - Create a new class called Admin which inherits from User. add a new method called editData to Admin that allows it to edit data. 
+
+LECTURE 12 - async, await, callback, promises
+
+1 - Callbacks  //a function passed as an argument to another function
+2 - Callback Hell : nested callbacks stacked below one another forming a pyramid structure. (pyramid of doom).
+3 - Promises : eventual completion of tasks (either resolve or reject). it is a object in JS and a solution to Callback Hell. let promise = new Promise((reject,resolve)=>{//code});  resolve and reject are callbacks provided by js. pending resolved and rejected are three states of promises. 
+4 - promise.then((result)=>{}) //after fulfilled
+5 - promise.catch((catch)=>{})  //after error
+6 - promise chain
+7 - async //makes any fucntion synchronous 
+8 - await //stops the execution of surrounding async functions till the promise is fulfilled.
+9 - IIFE (immediately invoked function expression)   //invoked as soon as defined
+10 - (iifeFunction(arguments){//code})();
+
+LECTURE 13 - FETCH API 
+1 - let promise = fetch(url, [options]) //interface for sending/receiving resources 
+  - uses request and response objects
+  - fetch method is used to fetch a response (data)
+2 - AJAX  //ASYNCHRONOUS JAVASCRIPT AND XML ( now a dats the responses from apis are in JSON format)
+3 - JSON  //JAVA SCRIPT OBJECT NOTATION
+4 - json() method    //converts JSON FORMAT TO JS  
+  - returns a second promise that resolves with the result of parsing the response body text as JSON (input is JSON output is JS object)
+5 - REQUEST AND RESPONSE (http verbs and response status code)
+
+note : http response header holds valuable inforation about the request 
