@@ -1,0 +1,21 @@
+src = "https://youtu.be/bU69doALJGU?si=n6IOrPep3gERDvis"
+src = "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+
+# CommonJs Vs EcmaScript Modules | Sigma Web Development Course - Tutorial #86 
+
+1 - npm init //to create a project in nodejs
+2 - require is common js and import is modern js
+
+# Working with Files: fs and path Modules | Sigma Web Development Course - Tutorial #87
+
+1 - fs module, fs promises, path module 
+
+# Introduction to Express Js | Sigma Web Development Course - Tutorial #88
+
+1 - app.get(path, handler)
+    app.post(path, handler)
+    app.put(path, handler)
+    app.delete(path, handler)
+2 - app.use(express.static("public"))  //used for public content  on server 
+
+# Response, Request and Routers in Express | Sigma Web Development Course - Tutorial #89

@@ -1,0 +1,11 @@
+SRC = https://youtu.be/oMrKVEedpHg?si=shvi8t9Owe-mPkFL
+
+# Installing MongoDB & MongoDB Compass | Sigma Web Development Course - Tutorial #94
+
+show databases
+use database_name
+db.database_name.find()
+db.database_name.insertOne({name : "javascript"})
+
+# CRUD Operations in MongoDB | Sigma Web Development Course - Tutorial #95
+
