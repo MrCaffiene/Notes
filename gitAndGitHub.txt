@@ -39,7 +39,37 @@ git status
 if git status showed error note the following command
 git config --global --add safe.directory D:/Projects/GitHub/first_repo
 
+Example for Sparse Checkout
+Suppose you want to work on src/example-file.js in the main branch of a repository located at https://github.com/user/repo.git.
 
+1-Initialize a new Git repository:
+mkdir example-repo
+cd example-repo
+git init
+
+2-Add the remote repository:
+git remote add origin https://github.com/user/repo.git
+
+3-Enable sparse checkout:
+git config core.sparseCheckout true
+
+4-Specify the file you want:
+echo "src/example-file.js" >> .git/info/sparse-checkout
+
+5-Pull the specific file from the repository:
+git pull origin main
+
+6-Edit the file:
+  Make your changes to src/example-file.js.
+
+7-Stage the file:
+git add src/example-file.js
+
+8-Commit your changes:
+git commit -m "Edit src/example-file.js"
+
+9-Push your changes:
+git push origin main
 
 
 git status indicators 
