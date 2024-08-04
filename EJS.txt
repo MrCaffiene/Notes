@@ -1,0 +1,30 @@
+https://youtu.be/Kah88N8W5rs?si=N93r3Tb12mjLwkOb
+https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+
+ejs Template Engine in Express | Sigma Web Development Course - Tutorial #92
+ejs is used for server side templating 
+
+1 - First, install EJS: 
+    npm install ejs
+
+2 - ensure u have "views" folder having "index.ejs" in it, which will be your Template.
+
+//expample code
+//this is your html file 
+<html>
+   <body>
+      Hello <%= foo %> //import to ensure
+   </body>
+</html>
+
+//this is your express app
+let express = require('express');
+let app = express();
+
+app.set('view engine', 'ejs'); //import to ensure 
+
+app.get('/', (req, res) => {
+  res.render('index', {foo: 'FOO'});
+});
+
+app.listen(4000, () => console.log('Example app listening on port 4000!'));
